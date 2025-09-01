@@ -6,17 +6,12 @@
   <title>手册</title>
   <style>
     html,body{height:100%;margin:0}
-    iframe{width:100%;height:100%;border:0}
+    object{width:100%;height:100%;border:0}
   </style>
 </head>
 <body>
-  <!-- 说明：
-       1) file 参数指向你的 PDF（相对 viewer.html 的路径）
-       2) #zoom=page-width 手机默认铺满宽度
-  -->
-  <iframe
-    src="./pdfjs/web/viewer.html?file=../../syg_2025.pdf#zoom=page-width"
-    title="PDF Viewer">
-  </iframe>
+  <object data="syg_2025.pdf" type="application/pdf">
+    <p>您的浏览器无法显示 PDF 文件。<a href="syg_2025.pdf">点击下载</a>.</p>
+  </object>
 </body>
 </html>
